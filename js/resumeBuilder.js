@@ -159,8 +159,12 @@ var projects = {
     }
 };
 
+var displayGoogleMap = function () {
+    $("#mapDiv").append(googleMap);
+}
 
 bio.display();
 work.display();
 projects.display();
 education.display();
+displayGoogleMap();
