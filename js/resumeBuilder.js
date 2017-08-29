@@ -14,7 +14,7 @@ var bio = {
     },
     "welcomeMessage": "Welcome to My World",
     "skills": ["HTML5", "CSS3", "Javascript", "Save The Earth!"],
-    "bioPic": "images/fry.jpg",
+    "biopic": "images/fry.jpg",
     display: function () {
         var formattedName = HTMLheaderName.replace("%data%", this.name);
         var formattedRole = HTMLheaderRole.replace("%data%", this.role);
@@ -33,7 +33,7 @@ var bio = {
         $("#topContacts").append(fullContacts);
         $("#footerContacts").append(fullContacts);
         var fullBioEtc = "";
-        var formattedBioPic = HTMLbioPic.replace("%data%", this.bioPic);
+        var formattedBioPic = HTMLbioPic.replace("%data%", this.biopic);
         var formattedBioMsg = HTMLwelcomeMsg.replace("%data%", this.welcomeMessage);
         fullBioEtc = formattedBioPic + formattedBioMsg;
         $("#header").append(fullBioEtc);
@@ -161,7 +161,7 @@ var projects = {
 
 var displayGoogleMap = function () {
     $("#mapDiv").append(googleMap);
-}
+};
 
 bio.display();
 work.display();
